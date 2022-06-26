@@ -1,5 +1,6 @@
-const pageContent = (
-   <div>
+function PageContent(){
+    return (
+        <div>
         <img src="react-logo.png" width="40px"></img>
         <h1>Fun facts about React</h1>
         
@@ -14,7 +15,8 @@ const pageContent = (
         </ul>
 
    </div>
+    )
+}
 
-)
 
-ReactDOM.render(pageContent, document.getElementById("main-container"))
+ReactDOM.render(<PageContent/>, document.getElementById("main-container"))
