@@ -1,15 +1,20 @@
-/* 
-Challenge - recreate the above line of code in vanilla JS by creating and
-appending an h1 to our div#root (without using innerHTML).
+const pageContent = (
+   <div>
+        <img src="react-logo.png" width="40px"></img>
+        <h1>Fun facts about React</h1>
+        
+        <ul>
+        
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise app including mobile apps</li>
+        
+        </ul>
 
-- Create a new h1 element
-- Give it some textContent
-- Give it a class name of "header"
-- append it as a child of the div#root
-    
-*/
+   </div>
 
-const h1 = document.createElement("h1")
-h1.textContent = "Hello, World!"
-h1.className = "header"
-document.getElementById("main-container").append(h1)
+)
+
+ReactDOM.render(pageContent, document.getElementById("main-container"))
